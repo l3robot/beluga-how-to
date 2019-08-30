@@ -26,12 +26,12 @@ More details [here](https://docs.computecanada.ca/wiki/B%C3%A9luga/en)
 
 More details [here](https://docs.computecanada.ca/wiki/PyTorch)
 
-1. Make sure you are in your `HOME` by doing:
+**1.** Make sure you are in your `HOME` by doing:
 ```bash
 cd ~
 ```
 
-2. Load the adequate modules:
+**2.** Load the adequate modules:
 ```bash
 module load python/3.7.0 # to have python, you can choose an other version
 module load scipy-stack # to have python scientific libraries
@@ -46,7 +46,7 @@ module load scipy-stack
 module load cuda" >> .bashrc
 ```
 
-3. Create and activate a python virtual environment, more details [here](https://docs.computecanada.ca/wiki/Python#Creating_and_using_a_virtual_environment). In brief, this will encapsulate your pytorch installation from other possible libraries:
+**3.** Create and activate a python virtual environment, more details [here](https://docs.computecanada.ca/wiki/Python#Creating_and_using_a_virtual_environment). In brief, this will encapsulate your pytorch installation from other possible libraries:
 ```bash
 mkdir envs
 virtualenv --no-download ~/envs/pytorch
@@ -57,7 +57,7 @@ To deactivate the environment you can at anytime execute:
 deactivate
 ```
 
-4. Update pip and install the beluga pytorch wheels (special optimized libraries):
+**4.** Update pip and install the beluga pytorch wheels (special optimized libraries):
 ```bash
 pip install torch torchvision torchtext torchaudio --no-index
 ```
