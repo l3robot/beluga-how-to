@@ -50,7 +50,7 @@ module load cuda" >> .bashrc
 ```bash
 mkdir envs
 virtualenv --no-download ~/envs/pytorch
-source activate ~/envs/pytorch
+source ~/envs/pytorch/bin/activate
 ```
 To deactivate the environment you can at anytime execute:
 ```bash
